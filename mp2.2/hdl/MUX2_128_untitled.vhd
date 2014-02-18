@@ -1,0 +1,43 @@
+--
+-- VHDL Architecture ece411.MUX2_128.untitled
+--
+-- Created:
+--          by - sutrave1.ews (gelib-057-28.ews.illinois.edu)
+--          at - 20:00:37 02/15/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY MUX2_128 IS
+   PORT( 
+      A   : IN     LC3b_OWORD;
+      B   : IN     LC3b_OWORD;
+      Sel : IN     std_logic;
+      F   : OUT    LC3b_OWORD
+   );
+
+-- Declarations
+
+END MUX2_128 ;
+
+--
+ARCHITECTURE untitled OF MUX2_128 IS
+BEGIN
+	PROCESS (A, B, SEL)
+	BEGIN  
+		IF SEL = '0' THEN
+			F <= A AFTER DELAY_MUX8;
+		ELSIF SEL = '1' THEN
+			F <= B AFTER DELAY_MUX8;
+		ELSE
+			F <= (OTHERS => 'X') AFTER DELAY_MUX8;
+		END IF;
+	END PROCESS;  
+END ARCHITECTURE untitled;
+

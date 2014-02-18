@@ -1,0 +1,19 @@
+# Current time Sun Feb 16 21:01:05 2014
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.1d"
+# Version = "2012.11"
+# Date = "Nov  1 2012"
+# Platform = linux
+# 0    0x082de7c7: 'xlist_set_xscrollbar_range + 0x27' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 1    0x082098c1: 'VListRedisplay + 0x1d1' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 2    0x08446f58: 'TclServiceIdle + 0x48' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 3    0x08439665: 'Tcl_DoOneEvent + 0x1ad' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 4    0x08362bd1: 'Tk_MainLoop + 0x19' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 5    0x08369da4: 'Tk_MainEx + 0x298' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 6    0x081b8b12: 'vish_inner_loop + 0x112' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 7    0x081bad15: 'main + 0x10f5' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# 8    0x004bfd21: '<unknown (@0x4bfd21)>'
+# 9    0x080cc8cc: 'start + 0x1c' in '/software/mentor/ModelSim-SE-10.1d/modeltech/bin/../linux/vish'
+# End of Stack Trace
+
